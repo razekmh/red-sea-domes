@@ -1,4 +1,24 @@
 # Red Sea Domes Extraction
+
+## 
+- Open a new terminal and navigate to the directory of your local repository
+- Fetch updates from remote to local using `git fetch`
+- Switch to this branch using `git checkout 2-build-utility-to-check-different-sigmas-for-blob-log-detection`
+- Run the program using `python main.py` followed by the options you would like to set. The avaiable options are 
+```
+-ns MIN_SIGMA, --min_sigma MIN_SIGMA
+                        Minimum standard deviation for Gaussian kernel. Default: 0
+-xs MAX_SIGMA, --max_sigma MAX_SIGMA
+                        Maximum standard deviation for Gaussian kernel. Default: 15
+-t THRESHOLD, --threshold THRESHOLD
+                        Threshold value to detect blobs. Default: 0.01
+-rs RADIUS_SCALER, --radius_scaler RADIUS_SCALER
+                        Radius scaler to scale the sigma of the blob and use the result as a radius of the
+                        blob. Default: 1
+```
+an example for setting the options would be `python main.py -ns 10 -xs 30 -t 0.1 -rs 2`. You could also choose to set only a subset of the options. For example `python main.py -ns 5 -t 0.1 -rs 2`
+
+
 ## Background
 Using the bathymetry data of the read sea floor we aim to extract dome protroding out of the floor.
 
