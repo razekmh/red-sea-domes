@@ -1,6 +1,6 @@
 # Red Sea Domes Extraction
 
-## 
+## Swtich to this branch and run the script
 - Open a new terminal and navigate to the directory of your local repository
 - Fetch updates from remote to local using `git fetch`
 - Switch to this branch using `git checkout 2-build-utility-to-check-different-sigmas-for-blob-log-detection`
